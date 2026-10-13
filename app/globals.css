@@ -1,26 +1,167 @@
 @import "tailwindcss";
 
+/* ---------- Design tokens ---------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg: #eef3f8;
+  --bg-accent: radial-gradient(1200px 600px at 10% -10%, #dbeafe 0%, transparent 60%),
+    radial-gradient(900px 500px at 110% 110%, #ccfbf1 0%, transparent 55%);
+  --surface: #ffffff;
+  --surface-2: #f5f8fb;
+  --border: #dbe3ec;
+  --fg: #0f1b2d;
+  --muted: #5b6b7f;
+  --accent: #1d5fd1;
+  --accent-strong: #154aa8;
+  --accent-fg: #ffffff;
+  --accent-soft: #e6efff;
+  --teal: #0f8f83;
+  --teal-soft: #e3f6f3;
+  --danger: #c2341b;
+  --danger-soft: #fdecea;
+  --success: #12805c;
+  --success-soft: #e5f6ee;
+  --star: #e2a300;
+  --user: linear-gradient(135deg, #1d5fd1 0%, #0f8f83 100%);
+  --user-fg: #ffffff;
+  --assistant: #f2f5f9;
+  --shadow: 0 10px 40px -12px rgb(15 27 45 / 0.18), 0 2px 6px rgb(15 27 45 / 0.05);
+  --ring: #3b82f6;
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #0a111c;
+    --bg-accent: radial-gradient(1200px 600px at 10% -10%, #0f2547 0%, transparent 60%),
+      radial-gradient(900px 500px at 110% 110%, #08332f 0%, transparent 55%);
+    --surface: #111b29;
+    --surface-2: #162233;
+    --border: #243246;
+    --fg: #e6edf6;
+    --muted: #93a3b8;
+    --accent: #5b9bff;
+    --accent-strong: #84b4ff;
+    --accent-fg: #06101f;
+    --accent-soft: #15284a;
+    --teal: #3dd1c1;
+    --teal-soft: #0f302d;
+    --danger: #ff8a75;
+    --danger-soft: #3a1914;
+    --success: #4ad6a0;
+    --success-soft: #0f3024;
+    --star: #f5c542;
+    --user: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
+    --user-fg: #ffffff;
+    --assistant: #18263a;
+    --shadow: 0 10px 40px -12px rgb(0 0 0 / 0.6), 0 2px 6px rgb(0 0 0 / 0.3);
+    --ring: #60a5fa;
+    color-scheme: dark;
   }
 }
 
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --color-teal: var(--teal);
+  --color-teal-soft: var(--teal-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-star: var(--star);
+  --color-assistant: var(--assistant);
+  --color-user-fg: var(--user-fg);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+/* ---------- Base ---------- */
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  background: var(--bg-accent), var(--bg);
+  background-attachment: fixed;
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.bg-user {
+  background: var(--user);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow);
+}
+
+/* Scrollbar */
+.scroll-area {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  overscroll-behavior: contain;
+}
+
+/* Typing indicator */
+@keyframes aep-bounce {
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+  40% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+.typing-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: var(--muted);
+  animation: aep-bounce 1.2s infinite ease-in-out;
+}
+.typing-dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.typing-dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes aep-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: aep-fade-in 0.2s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typing-dot,
+  .fade-in {
+    animation: none;
+  }
 }

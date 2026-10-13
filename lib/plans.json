@@ -1,0 +1,623 @@
+[
+  {
+    "id": "ny-hmo-zero",
+    "name": "Evergreen Advantage Zero (HMO)",
+    "carrier": "Evergreen Health Partners",
+    "type": "MAPD_HMO",
+    "monthlyPremium": 0,
+    "deductible": 0,
+    "drugDeductible": 250,
+    "moop": 6700,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 1,
+      "atorvastatin": 1,
+      "lisinopril": 1,
+      "amlodipine": 1,
+      "levothyroxine": 1,
+      "omeprazole": 2,
+      "losartan": 2,
+      "gabapentin": 2,
+      "eliquis": 4,
+      "jardiance": 4
+    },
+    "starRating": 4,
+    "extras": {
+      "dental": "$1,000/yr preventive & basic",
+      "vision": "$150/yr eyewear allowance",
+      "otc": "$50/quarter OTC card"
+    },
+    "networkType": "HMO",
+    "outOfNetworkCoverage": false,
+    "serviceZipPrefixes": [
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "112"
+    ],
+    "counties": [
+      "New York",
+      "Kings",
+      "Queens",
+      "Bronx",
+      "Richmond"
+    ],
+    "highlights": [
+      "$0 monthly premium",
+      "$0 Tier 1 generics at preferred pharmacies",
+      "Referrals required to see specialists"
+    ]
+  },
+  {
+    "id": "ny-hmo-dual",
+    "name": "Evergreen Dual Complete (HMO D-SNP)",
+    "carrier": "Evergreen Health Partners",
+    "type": "MAPD_HMO",
+    "monthlyPremium": 18.5,
+    "deductible": 0,
+    "drugDeductible": 0,
+    "moop": 3000,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 1,
+      "atorvastatin": 1,
+      "lisinopril": 1,
+      "amlodipine": 1,
+      "levothyroxine": 1,
+      "omeprazole": 1,
+      "losartan": 1,
+      "gabapentin": 2,
+      "eliquis": 3,
+      "jardiance": 3,
+      "trelegy": 3
+    },
+    "starRating": 3.5,
+    "extras": {
+      "dental": "$3,000/yr comprehensive",
+      "vision": "$300/yr eyewear",
+      "hearing": "$1,500 hearing aids every 3 years",
+      "otc": "$150/month OTC & grocery card",
+      "fitness": "Silver fitness membership"
+    },
+    "networkType": "HMO",
+    "outOfNetworkCoverage": false,
+    "serviceZipPrefixes": [
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "112"
+    ],
+    "counties": [
+      "New York",
+      "Kings",
+      "Queens",
+      "Bronx",
+      "Richmond"
+    ],
+    "highlights": [
+      "D-SNP: only for people with both Medicare and Medicaid",
+      "Premium may be $0 with Extra Help",
+      "Large monthly OTC & grocery allowance"
+    ]
+  },
+  {
+    "id": "ny-ppo-choice",
+    "name": "Harborview Choice (PPO)",
+    "carrier": "Harborview Health",
+    "type": "MAPD_PPO",
+    "monthlyPremium": 45,
+    "deductible": 250,
+    "drugDeductible": 400,
+    "moop": 7550,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 1,
+      "atorvastatin": 2,
+      "lisinopril": 1,
+      "amlodipine": 2,
+      "levothyroxine": 1,
+      "omeprazole": 2,
+      "losartan": 2,
+      "eliquis": 3,
+      "jardiance": 3,
+      "ozempic": 3,
+      "trelegy": 4
+    },
+    "starRating": 4.5,
+    "extras": {
+      "dental": "$2,000/yr comprehensive",
+      "vision": "$200/yr eyewear",
+      "hearing": "$1,000/yr hearing aids"
+    },
+    "networkType": "PPO",
+    "outOfNetworkCoverage": true,
+    "serviceZipPrefixes": [
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "112"
+    ],
+    "counties": [
+      "New York",
+      "Kings",
+      "Queens",
+      "Bronx",
+      "Richmond"
+    ],
+    "highlights": [
+      "See out-of-network doctors at a higher cost",
+      "No referrals needed",
+      "Covers Ozempic at Tier 3"
+    ]
+  },
+  {
+    "id": "fl-hmo-sunshine",
+    "name": "Palmetto Sunshine Advantage (HMO)",
+    "carrier": "Palmetto Care",
+    "type": "MAPD_HMO",
+    "monthlyPremium": 15,
+    "deductible": 0,
+    "drugDeductible": 150,
+    "moop": 4900,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 1,
+      "atorvastatin": 1,
+      "lisinopril": 1,
+      "amlodipine": 1,
+      "levothyroxine": 2,
+      "omeprazole": 2,
+      "losartan": 1,
+      "gabapentin": 2,
+      "eliquis": 3,
+      "jardiance": 3,
+      "ozempic": 4
+    },
+    "starRating": 4.5,
+    "extras": {
+      "dental": "$1,500/yr comprehensive",
+      "vision": "$175/yr eyewear",
+      "fitness": "Gym membership included",
+      "otc": "$75/quarter OTC card"
+    },
+    "networkType": "HMO",
+    "outOfNetworkCoverage": false,
+    "serviceZipPrefixes": [
+      "330",
+      "331",
+      "332",
+      "333",
+      "334"
+    ],
+    "counties": [
+      "Miami-Dade",
+      "Broward",
+      "Palm Beach"
+    ],
+    "highlights": [
+      "4.5-star rated plan",
+      "Low $4,900 out-of-pocket max",
+      "Must use in-network doctors"
+    ]
+  },
+  {
+    "id": "fl-ppo-coastal",
+    "name": "Coastal Freedom (PPO)",
+    "carrier": "Bayline Health",
+    "type": "MAPD_PPO",
+    "monthlyPremium": 38,
+    "deductible": 200,
+    "drugDeductible": 350,
+    "moop": 8300,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 1,
+      "atorvastatin": 2,
+      "lisinopril": 2,
+      "amlodipine": 2,
+      "levothyroxine": 2,
+      "omeprazole": 3,
+      "losartan": 3,
+      "gabapentin": 3,
+      "eliquis": 4,
+      "trelegy": 4
+    },
+    "starRating": 3.5,
+    "extras": {
+      "dental": "$1,000/yr preventive",
+      "hearing": "$750/yr hearing aids"
+    },
+    "networkType": "PPO",
+    "outOfNetworkCoverage": true,
+    "serviceZipPrefixes": [
+      "330",
+      "331",
+      "332",
+      "333",
+      "334"
+    ],
+    "counties": [
+      "Miami-Dade",
+      "Broward",
+      "Palm Beach"
+    ],
+    "highlights": [
+      "Out-of-network coverage nationwide",
+      "No referrals needed"
+    ]
+  },
+  {
+    "id": "fl-ppo-premier",
+    "name": "Coastal Premier Plus (PPO)",
+    "carrier": "Bayline Health",
+    "type": "MAPD_PPO",
+    "monthlyPremium": 89,
+    "deductible": 0,
+    "drugDeductible": 0,
+    "moop": 3900,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 1,
+      "atorvastatin": 1,
+      "lisinopril": 1,
+      "amlodipine": 1,
+      "levothyroxine": 1,
+      "omeprazole": 1,
+      "losartan": 1,
+      "gabapentin": 1,
+      "eliquis": 2,
+      "jardiance": 2,
+      "ozempic": 3,
+      "trelegy": 3
+    },
+    "starRating": 5,
+    "extras": {
+      "dental": "$3,000/yr comprehensive",
+      "vision": "$300/yr eyewear",
+      "hearing": "$2,000 hearing aids",
+      "fitness": "Silver Sneakers fitness"
+    },
+    "networkType": "PPO",
+    "outOfNetworkCoverage": true,
+    "serviceZipPrefixes": [
+      "330",
+      "331",
+      "332",
+      "333",
+      "334"
+    ],
+    "counties": [
+      "Miami-Dade",
+      "Broward",
+      "Palm Beach"
+    ],
+    "highlights": [
+      "5-star rated plan",
+      "$0 drug deductible, broad formulary",
+      "Low $3,900 out-of-pocket max"
+    ]
+  },
+  {
+    "id": "tx-hmo-lonestar",
+    "name": "Lone Prairie Advantage (HMO)",
+    "carrier": "Prairie Wellness",
+    "type": "MAPD_HMO",
+    "monthlyPremium": 22,
+    "deductible": 0,
+    "drugDeductible": 300,
+    "moop": 5500,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 1,
+      "atorvastatin": 1,
+      "lisinopril": 1,
+      "amlodipine": 1,
+      "levothyroxine": 1,
+      "omeprazole": 2,
+      "losartan": 2,
+      "eliquis": 3,
+      "jardiance": 4,
+      "trelegy": 4
+    },
+    "starRating": 4,
+    "extras": {
+      "dental": "$1,200/yr preventive & basic",
+      "vision": "$150/yr eyewear",
+      "otc": "$40/quarter OTC card",
+      "fitness": "Gym membership included"
+    },
+    "networkType": "HMO",
+    "outOfNetworkCoverage": false,
+    "serviceZipPrefixes": [
+      "750",
+      "751",
+      "752",
+      "753"
+    ],
+    "counties": [
+      "Dallas",
+      "Collin",
+      "Denton",
+      "Tarrant"
+    ],
+    "highlights": [
+      "Low premium with dental, vision & fitness",
+      "Referrals required to see specialists"
+    ]
+  },
+  {
+    "id": "tx-ppo-prairie",
+    "name": "Open Range (PPO)",
+    "carrier": "Prairie Wellness",
+    "type": "MAPD_PPO",
+    "monthlyPremium": 54,
+    "deductible": 300,
+    "drugDeductible": 450,
+    "moop": 9350,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 2,
+      "atorvastatin": 2,
+      "lisinopril": 2,
+      "amlodipine": 2,
+      "levothyroxine": 2,
+      "omeprazole": 3,
+      "losartan": 2,
+      "gabapentin": 3,
+      "eliquis": 3,
+      "jardiance": 3,
+      "ozempic": 4
+    },
+    "starRating": 3.5,
+    "extras": {
+      "dental": "$1,000/yr preventive",
+      "vision": "$100/yr eyewear"
+    },
+    "networkType": "PPO",
+    "outOfNetworkCoverage": true,
+    "serviceZipPrefixes": [
+      "750",
+      "751",
+      "752",
+      "753"
+    ],
+    "counties": [
+      "Dallas",
+      "Collin",
+      "Denton",
+      "Tarrant"
+    ],
+    "highlights": [
+      "Out-of-network coverage",
+      "Good fit for frequent travelers"
+    ]
+  },
+  {
+    "id": "ma-ppo-patriot",
+    "name": "Patriot Choice (PPO, no drug coverage)",
+    "carrier": "Stars & Stripes Health",
+    "type": "MA_PPO",
+    "monthlyPremium": 0,
+    "deductible": 0,
+    "drugDeductible": null,
+    "moop": 5900,
+    "includesDrugCoverage": false,
+    "formulary": {},
+    "starRating": 4,
+    "extras": {
+      "dental": "$1,500/yr comprehensive",
+      "vision": "$200/yr eyewear",
+      "hearing": "$1,000/yr hearing aids",
+      "fitness": "Fitness membership"
+    },
+    "networkType": "PPO",
+    "outOfNetworkCoverage": true,
+    "serviceZipPrefixes": [
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "112",
+      "330",
+      "331",
+      "332",
+      "333",
+      "334",
+      "750",
+      "751",
+      "752",
+      "753"
+    ],
+    "counties": [
+      "New York metro",
+      "South Florida",
+      "Dallas–Fort Worth"
+    ],
+    "highlights": [
+      "No Part D: designed for veterans with VA drug benefits",
+      "$0 premium",
+      "Works alongside VA care"
+    ]
+  },
+  {
+    "id": "pdp-basic",
+    "name": "ClearScript Basic (PDP)",
+    "carrier": "ClearScript Rx",
+    "type": "PDP",
+    "monthlyPremium": 8.9,
+    "deductible": 0,
+    "drugDeductible": 590,
+    "moop": null,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 1,
+      "atorvastatin": 1,
+      "lisinopril": 1,
+      "amlodipine": 1,
+      "levothyroxine": 1,
+      "omeprazole": 2,
+      "losartan": 2,
+      "gabapentin": 2
+    },
+    "starRating": 3.5,
+    "extras": {},
+    "networkType": "N/A",
+    "outOfNetworkCoverage": false,
+    "serviceZipPrefixes": [],
+    "counties": [],
+    "highlights": [
+      "Lowest-cost drug plan",
+      "Good for common generics only",
+      "Brand-name drugs not covered"
+    ]
+  },
+  {
+    "id": "pdp-standard",
+    "name": "ClearScript Value (PDP)",
+    "carrier": "ClearScript Rx",
+    "type": "PDP",
+    "monthlyPremium": 32.4,
+    "deductible": 0,
+    "drugDeductible": 400,
+    "moop": null,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 1,
+      "atorvastatin": 1,
+      "lisinopril": 1,
+      "amlodipine": 1,
+      "levothyroxine": 1,
+      "omeprazole": 2,
+      "losartan": 1,
+      "gabapentin": 2,
+      "eliquis": 3,
+      "jardiance": 3,
+      "trelegy": 4
+    },
+    "starRating": 4,
+    "extras": {},
+    "networkType": "N/A",
+    "outOfNetworkCoverage": false,
+    "serviceZipPrefixes": [],
+    "counties": [],
+    "highlights": [
+      "Covers Eliquis and Jardiance at Tier 3",
+      "Balanced premium and coverage"
+    ]
+  },
+  {
+    "id": "pdp-enhanced",
+    "name": "ClearScript Enhanced (PDP)",
+    "carrier": "ClearScript Rx",
+    "type": "PDP",
+    "monthlyPremium": 78,
+    "deductible": 0,
+    "drugDeductible": 0,
+    "moop": null,
+    "includesDrugCoverage": true,
+    "formulary": {
+      "metformin": 1,
+      "atorvastatin": 1,
+      "lisinopril": 1,
+      "amlodipine": 1,
+      "levothyroxine": 1,
+      "omeprazole": 1,
+      "losartan": 1,
+      "gabapentin": 1,
+      "eliquis": 2,
+      "jardiance": 2,
+      "ozempic": 3,
+      "trelegy": 3
+    },
+    "starRating": 4.5,
+    "extras": {},
+    "networkType": "N/A",
+    "outOfNetworkCoverage": false,
+    "serviceZipPrefixes": [],
+    "counties": [],
+    "highlights": [
+      "$0 drug deductible",
+      "Broadest formulary including Ozempic",
+      "Best for multiple brand-name drugs"
+    ]
+  },
+  {
+    "id": "medigap-g",
+    "name": "Keystone Medigap Plan G",
+    "carrier": "Keystone Mutual",
+    "type": "MEDIGAP",
+    "monthlyPremium": 168,
+    "deductible": 257,
+    "drugDeductible": null,
+    "moop": null,
+    "medigapLetter": "G",
+    "includesDrugCoverage": false,
+    "formulary": {},
+    "starRating": 4.5,
+    "extras": {},
+    "networkType": "ANY_MEDICARE_PROVIDER",
+    "outOfNetworkCoverage": true,
+    "serviceZipPrefixes": [],
+    "counties": [],
+    "highlights": [
+      "See any doctor that accepts Medicare, no network",
+      "Only the Part B deductible out of pocket",
+      "Pair with a PDP for drug coverage"
+    ]
+  },
+  {
+    "id": "medigap-n",
+    "name": "Keystone Medigap Plan N",
+    "carrier": "Keystone Mutual",
+    "type": "MEDIGAP",
+    "monthlyPremium": 132,
+    "deductible": 257,
+    "drugDeductible": null,
+    "moop": null,
+    "medigapLetter": "N",
+    "includesDrugCoverage": false,
+    "formulary": {},
+    "starRating": 4,
+    "extras": {},
+    "networkType": "ANY_MEDICARE_PROVIDER",
+    "outOfNetworkCoverage": true,
+    "serviceZipPrefixes": [],
+    "counties": [],
+    "highlights": [
+      "Lower premium than Plan G",
+      "Small copays: up to $20 office / $50 ER",
+      "Pair with a PDP for drug coverage"
+    ]
+  },
+  {
+    "id": "medigap-f",
+    "name": "Keystone Medigap Plan F",
+    "carrier": "Keystone Mutual",
+    "type": "MEDIGAP",
+    "monthlyPremium": 245,
+    "deductible": 0,
+    "drugDeductible": null,
+    "moop": null,
+    "medigapLetter": "F",
+    "includesDrugCoverage": false,
+    "formulary": {},
+    "starRating": 4,
+    "extras": {},
+    "networkType": "ANY_MEDICARE_PROVIDER",
+    "outOfNetworkCoverage": true,
+    "serviceZipPrefixes": [],
+    "counties": [],
+    "highlights": [
+      "Only if eligible for Medicare before 2020",
+      "Covers the Part B deductible: $0 out of pocket",
+      "Pair with a PDP for drug coverage"
+    ]
+  }
+]
